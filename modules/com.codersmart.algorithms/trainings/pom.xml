@@ -4,9 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.codersmart.algorithms</groupId>
-    <artifactId>trainings</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <parent>
         <groupId>com.codersmart</groupId>
         <artifactId>algorithms</artifactId>
@@ -14,4 +11,16 @@
         <relativePath>..</relativePath>
     </parent>
 
+    <groupId>com.codersmart.algorithms</groupId>
+    <artifactId>trainings</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
