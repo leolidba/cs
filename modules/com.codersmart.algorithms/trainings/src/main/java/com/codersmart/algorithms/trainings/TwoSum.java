@@ -1,10 +1,16 @@
+/**
+ * TwoSum solutions
+ */
 package com.codersmart.algorithms.trainings;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *
+ */
 public class TwoSum {
-    public static int[] getTwoSum(final int[] input, int target) {
+    public int[] getTwoSum(final int[] input, int target) {
         int[] ret = new int[]{};
         Map<Integer, Integer> hashValueIndex = new HashMap<>();
         for (int i = 0; i < input.length; i++) {
@@ -29,7 +35,7 @@ public class TwoSum {
         final int firstVal = nums[0];
 
         for (int i = 1; i < il; i++) {
-            int currNum = nums[i];
+        int currNum = nums[i];
             int complement = target - currNum;
 
             if (complement == firstVal) {
@@ -37,8 +43,8 @@ public class TwoSum {
             }
 
             int complementLLIndex = bucket[complement & bitMod];
-            while(complementLLIndex != 0) {
-                if(nums[complementLLIndex] == complement) {
+            while (complementLLIndex != 0) {
+                if (nums[complementLLIndex] == complement) {
                     //Found
                     return new int[] { complementLLIndex, i };
                 }
@@ -48,7 +54,7 @@ public class TwoSum {
             linked[i] = bucket[currNumLLIndex];
             bucket[currNumLLIndex] = i;
         }
-        return null;
+        return new int[]{};
     }
 }
 
