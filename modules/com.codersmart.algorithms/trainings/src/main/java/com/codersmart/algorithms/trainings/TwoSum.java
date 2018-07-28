@@ -11,6 +11,10 @@ import java.util.Map;
  */
 public class TwoSum {
     public int[] getTwoSum(final int[] input, int target) {
+        return getTwoSumMap(input, target);
+    }
+
+    private int[] getTwoSumMap(int[] input, int target) {
         int[] ret = new int[]{};
         Map<Integer, Integer> hashValueIndex = new HashMap<>();
         for (int i = 0; i < input.length; i++) {
@@ -22,6 +26,7 @@ public class TwoSum {
         }
         return ret;
     }
+
     public int[] getTwoSumBest(int[] nums, int target) {
         final int il = nums.length;
         int il2 = (il >> 2) - 1;
