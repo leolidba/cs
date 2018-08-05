@@ -21,12 +21,31 @@ class LongestSubstringWithoutRepeatingCharactersTest {
         LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
         assertEquals(3, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb"));
     }
-    void lengthOfLongestSubstring() {
+    @Test
+    void lengthOfLongestSubstringCase2() {
         LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
         assertEquals(1, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb"));
     }
-    void lengthOfLongestSubstring() {
+    @Test
+    void lengthOfLongestSubstringCase3() {
         LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
         assertEquals(3, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew"));
     }
+    @Test
+    void lengthOfLongestSubstringCase4() {
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
+        assertEquals(5, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("tmmzuxt"));
+    }
+    @Test
+    void lengthOfLongestSubstringCase5() {
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
+        assertEquals(3, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("dvdf"));
+    }
+    @Test
+    void lengthOfLongestSubstringCase6() {
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
+        assertEquals(5, longestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("nfpdmpi"));
+    }
+
+
 }
